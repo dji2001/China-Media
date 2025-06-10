@@ -40,10 +40,11 @@
   <h1>China Foreign Coverage Explorer</h1>
 
   <p>
-    This website provides an interactive interface to explore the findings from the paper:
+    This website provides an interactive interface to explore the data from the paper:
     <strong>“Domestic Politics and Editorial Control Over Foreign News Coverage in the People’s Daily, 1993–2022”</strong><br>
     <em>by Jianbing Li, Jiakun Jack Zhang, Duoji Jiang, and Weifeng Zhong</em><br>
-    <a href="https://doi.org/10.1080/10670564.2025.2486329" target="_blank">Read the paper</a>
+    <a href="https://doi.org/10.1080/10670564.2025.2486329" target="_blank">Journal Version</a><br>
+    <a href="https://www.mercatus.org/research/working-papers/chinas-domestic-politics-and-editorial-control-over-foreign-news-coverage" target="_blank"> Open-source Preprint</a>
   </p>
 
   <h2>About the Project</h2>
@@ -52,39 +53,27 @@
   </p>
 
   <p>
-    To support this research, we constructed the <a href="https://github.com/dji2001/China-Media" target="_blank">CFC Database</a>, which includes over 1 million articles published between 1993 and 2022. Articles are tagged with country mentions, and the dataset allows users to track trends in how often different countries appear in Chinese state media.
+    To support this research, we developed the <a href="https://github.com/dji2001/China-Media" target="_blank">CFC Database</a>, which records the number of articles referencing specific countries (defined as having the country keyword appear more than twice), their proportion relative to the total number of articles each year, and supplementary data such as trade volumes and leadership visits. This dataset enables users to explore trends in the frequency of different countries’ appearances in Chinese state media.
   </p>
 
   <h2>Explore Country Mentions</h2>
-  <p>
-    Use the interactive plot below to visualize how frequently a country of your choice was mentioned in the <em>People’s Daily</em> from 1993 to 2022.
+  Use the interactive plot below to visualize how frequently a country of your choice was mentioned in the <em>People’s Daily</em> from 1993 to 2022. <br>
+  1. Use the slider at the bottom of the chart to select a specific range of years to view. <br>
+  2. Double-click on a country name in the legend to isolate its line; then click other names to add or remove countries for comparison. 
   </p>
 
-  <div class="plot-container">
-    <label for="countrySelect">Select a Country:</label>
-    <select id="countrySelect">
-      <option value="US">United States</option>
-      <option value="Japan">Japan</option>
-      <option value="Russia">Russia</option>
-      <option value="UK">United Kingdom</option>
-      <option value="France">France</option>
-      <!-- Add more countries as needed -->
-    </select>
-
-    <div id="plot">[Interactive Plot Placeholder]</div>
+  <div id="plot">
+    <iframe src="foreign_coverage_interactive.html" width="100%" height="650px" style="border:none;"></iframe>
   </div>
+ 
 
   <div class="footer">
     Data and code: <a href="https://github.com/dji2001/China-Media" target="_blank">GitHub - China-Media</a><br>
-    Contact: Duoji Jiang | Updated: June 2025
+    Contact: Duoji Jiang duojijiang2001@gmail.com | Updated: June 2025
   </div>
 
-  <!-- Placeholder for future JS -->
-  <script>
-    // This is a placeholder script block.
-    // You can use Plotly or D3.js to dynamically render the line chart here.
-    // Example:
-    // Plotly.newPlot("plot", data, layout);
-  </script>
+
+
+
 </body>
 </html>
